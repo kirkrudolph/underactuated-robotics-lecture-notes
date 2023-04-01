@@ -2,7 +2,8 @@
 
 " Simple " Pendulum
 
-![pendulum](pen.png)
+![pendulum](images/pen.png)
+
 Kinetic Energy = T
 
 Potential Energy = U
@@ -53,7 +54,7 @@ $\dot{x}=f(x,u)$
 
 Step 1: Draw the function $f$
 
-![image](func.png)
+![image](images/func.png)
 
 Fixed point: $f(x^*)=0$
 
@@ -65,7 +66,7 @@ Unstable Fixed Point has two arrows pointing away.
 
 Linear functions are a simple line. Has to pass through origin.
 
-![Linear-Func](linear-func.png)
+![Linear-Func](images/linear-func.png)
 
 [28:00]
 Definition of Stability
@@ -106,5 +107,5 @@ $\dot{x} = [\dot\theta,\ddot\theta]'$
 
 Plotting $x$ vs $\dot{x}$ results in the "Phase Diagram"
 
-![Phase-Diagram](phase-diagram.png)
+![Phase-Diagram](images/phase-diagram.png)
 

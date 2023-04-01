@@ -228,4 +228,4 @@ See code examples
     - mini-batch helps in big problems
     - wrap-arround network (if dynamics call for it)
         - 0 and $2\pi$ should mean the same thing to the network
-        - ![wrap](wrap-around-initial-layer.png)
+        - ![wrap](images/wrap-around-initial-layer.png)

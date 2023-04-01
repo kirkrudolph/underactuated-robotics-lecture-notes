@@ -19,7 +19,7 @@ What about feedback linearization.
 $u = 2mglsin(\theta)$
 
 This controller "inverts" gravity. With this controller, some of the vector field had to change significantly (which requires significant control effort)
-![fb](feedback-cancelation.png)
+![fb](images/feedback-cancelation.png)
 
 Peak torque required would be $2mgl$. If I don't have that, maybe the control is 
 
@@ -58,20 +58,20 @@ $\ddot{q}=u$, $|u|<1$
 - Whereever the initial condition is, full actuation until ending up on the "backwards s" and then ride it into the stable fixed point of double integrator.
 - The only time you overshoot is when staring in an initial condition where it's not possible to stop in time.
 
-![min-time](min-time.png)
+![min-time](images/min-time.png)
 ~29:00
 Minimum-time problems are like shortest path in CS.
 - Directed (weighted) graph search
 - Discretize phase diagram into a grid.
 
-![graph](weighted-graph.png)
+![graph](images/weighted-graph.png)
 
 This problem is solved via Dynamic Programming
 
 Discrete Dynamic Programming
 ----------------------------
 
-![ddp](Discrete-dynamic-programming.png)
+![ddp](images/Discrete-dynamic-programming.png)
 
 DP is a recursive algorithm
 - Solves backwards from the goal
@@ -101,7 +101,7 @@ $J(s_i) = min_{a}[g(s,a)+J(f(s,a))]$
     - Why not something faster like Dykstra?
         - Goal is to compute policy from all possible initial conditions (Belman) which is different from starting from a single initial condition and solving forward/backwards to goal (Dykstra). Dynamic Programming solves the whole thing simultaneously and has exact corralation to continuous time formulation.
 
-![dp-algo](dp-algo.png)
+![dp-algo](images/dp-algo.png)
 
 - Initialize J with best guess
 - Iteratively update J.
@@ -113,8 +113,8 @@ $J(s_i) = min_{a}[g(s,a)+J(f(s,a))]$
 - Make bounds on uncertainties.
 
 Example 1: Tabular RL
-![iter1](iter1.png)
-![iter2](iter2.png)
+![iter1](images/iter1.png)
+![iter2](images/iter2.png)
 
 - Optimal action is often not unique.
 - Optimal cost to go is unqiue.
@@ -122,7 +122,7 @@ Example 1: Tabular RL
 - Don't have to update every state on every iteration. If you only have some information, you can update with that and as long as you visit each state with some probability, the algorithm will converge.
 
 Example 2: Double Integrator Dynamic Programming Sim
-![sim1](double-int-dp-sim.png)
+![sim1](images/double-int-dp-sim.png)
 
 Example 3: Using different cost functions.
 Min: x^2+u^2 
@@ -130,7 +130,7 @@ Min: x^2+u^2
 - Quadratic Regulator
 - Softer policy
 
-![sim2](double-int-dp-sim2.png)
+![sim2](images/double-int-dp-sim2.png)
 
 - If you have no cost on action but you have limits on action, in general, the optimal policty will be bang-bang. Switching between the two becomes fairly complicated depending on dynamics.
 

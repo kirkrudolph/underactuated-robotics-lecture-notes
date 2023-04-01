@@ -4,7 +4,7 @@
 - Use algorithms we already have
 - Introduce new algorithms only to solve new problems we can't.
 
-![acro-car-pole](acrobot-cart-pole.png)
+![acro-car-pole](images/acrobot-cart-pole.png)
 
 $M(\dot{q})\ddot{q}+C(q,\dot{q})\dot{q} = T_g(q) + Bu$
 
@@ -47,14 +47,14 @@ Example: Linearized Pendulum
 
 [26:30] Plot phase diagram of linear system
 
-![lin-pen](linearlized-pendulum.png)
-![lin-pen2](linearized-pendulum2.png)
+![lin-pen](images/linearlized-pendulum.png)
+![lin-pen2](images/linearized-pendulum2.png)
 
 Linearized approximations can be *very* good (locally)
 
 [35:00-47:00] Appriciating / Visualizing / Understanding LQR
 
-![under-lqr](understanding-lqr.png)
+![under-lqr](images/understanding-lqr.png)
 
 Linearizing the manipulator equations
 -------------------------------------

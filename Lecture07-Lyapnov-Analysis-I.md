@@ -30,7 +30,7 @@ $E = \frac{1}{2}ml^2\dot{\theta}^2 - mgl\cos(\theta) \geq -mgl$
 $\frac{d}{dt}E = ml^2\ddot{\theta}\dot{\theta} + \dot{\theta}mgl\sin(\theta) = (-b\dot{\theta}+mgl\sin(\theta))\dot\theta-\dot\theta mgl\sin(\theta) = -b\dot\theta^2 \leq 0$
 
 $\dot{E}$ is negative definite "trough"
-![trough](Etrough.png)
+![trough](images/Etrough.png)
 
 ## [12:00] Lyapnov functions
 Generalize notion of energy function: Lyapnov functions / analysis
