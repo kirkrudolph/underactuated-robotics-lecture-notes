@@ -2,7 +2,7 @@
 
 ## Themes of Class
     
-    We should be doing optimization to solve the problems but the dynamics should matter. Optimizing a dynamic system isn't the same as general optimization because we know more about it. There's "structure in the equations" that we should exploit. Should make optimization scale, require less compute, be more reliable, ect.
+>We should be doing optimization to solve the problems but the dynamics should matter. Optimizing a dynamic system isn't the same as general optimization because we know more about it. There's "structure in the equations" that we should exploit. Should make optimization scale, require less compute, be more reliable, ect.
 
 ## High Level Review
 
@@ -28,7 +28,7 @@ Lyaponov (relaxed optimal definition)
 
 Trajectory optimization is a direct attack against creating a controller that works for all states. Instead, we switch the problem to solve a smaller problem of "finding a controller that works for a particular `x[0]`". One trajectory that determines what the controll action should be for a finite amount of time.
 
-    We try to handle very high demensional problems by solving a more narrow problem which scales only with parameterization in time, not state.
+>We try to handle very high demensional problems by solving a more narrow problem which scales only with parameterization in time, not state.
 
 This is what Atlas uses at Boston Dynamics. It does scale and work in practice.
 
@@ -79,7 +79,9 @@ $u[0],u[1],...,u[N[$
 
 "Finite search" of `# control inputs`*`# timesetps`
 
-### Direct Transcription (aka MPC)
+### Direct Transcription
+
+Note to Self: Not yet MPC. Talking about solving once for **one** trajectory at the moment. Just a plan, not a controller.
 
 Add $x[.]$ as extra discision variables,
 $ \min_{u[.],x[.]}\sum_{n=0}^N{l(x[n],u[n])} \\
@@ -102,7 +104,9 @@ Compared to LQR, the differences are:
 4. Can solve "on the fly" because solvers have become so reliable and fast. Started in chemical industry with slow dynamics. Now it can run at fast rates like in Atlas. Even if $x$ is large and $N$ is large, if dynamics are linear, convex solvers will scale very well. 
 5. $u[0]$ is going to effect the outcome more than $u[N]$(probably why people use smaller horizons for $u[k]$ than for $x[k]$)
  
-### Direct Shooting (also MPC)
+### Direct Shooting
+
+Note to Self: Not yet MPC. Talking about solving once for **one** trajectory at the moment. Just a plan, not a controller.
 
 If paying attention to "adding $x[.]$ as a desicion variable", one might think "I shouldn't have to do that. It seems pretty waistful. We know how to multiply the differential equations. If I've solved for $u[k]$ I can compute $x[k]$ by simulating"
 
