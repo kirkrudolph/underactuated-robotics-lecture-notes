@@ -81,7 +81,7 @@ $u[0],u[1],...,u[N[$
 
 ### Direct Transcription
 
-Note to Self: Not yet MPC. Talking about solving once for **one** trajectory at the moment. Just a plan, not a controller.
+Note to Self: Not yet MPC. Talking about solving once for **one** trajectory at the moment. Just a feasible plan, not a controller.
 
 Add $x[.]$ as extra discision variables,
 $ \min_{u[.],x[.]}\sum_{n=0}^N{l(x[n],u[n])} \\
@@ -106,7 +106,7 @@ Compared to LQR, the differences are:
  
 ### Direct Shooting
 
-Note to Self: Not yet MPC. Talking about solving once for **one** trajectory at the moment. Just a plan, not a controller.
+Note to Self: Not yet MPC. Talking about solving once for **one** trajectory at the moment. Just a feasible plan, not a controller.
 
 If paying attention to "adding $x[.]$ as a desicion variable", one might think "I shouldn't have to do that. It seems pretty waistful. We know how to multiply the differential equations. If I've solved for $u[k]$ I can compute $x[k]$ by simulating"
 
