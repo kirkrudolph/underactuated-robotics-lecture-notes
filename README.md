@@ -3,8 +3,8 @@
 
 ## Key Lectures
 
-1. Introduction
-3. Dynamic Programming I
-6. Dynamic Programming III
+01. Introduction
+03. Dynamic Programming I
+06. Dynamic Programming III
 11. Trajectory Optimization
 13. Trajectory Stabilization
