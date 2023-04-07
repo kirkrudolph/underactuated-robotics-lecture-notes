@@ -28,7 +28,7 @@ Lyaponov (relaxed optimal definition)
 
 Trajectory optimization is a direct attack against creating a controller that works for all states. Instead, we switch the problem to solve a smaller problem of "finding a controller that works for a particular `x[0]`". One trajectory that determines what the controll action should be for a finite amount of time.
 
->We try to handle very high demensional problems by solving a more narrow problem which scales only with parameterization in time, not state.
+>We try to handle very high dimensional problems by solving a more narrow problem which scales only with parameterization in time, not state.
 
 This is what Atlas uses at Boston Dynamics. It does scale and work in practice.
 
